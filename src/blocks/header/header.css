@@ -1,0 +1,13 @@
+@import url(./__logo/header__logo.css);
+@import url(./__main/header__main.css);
+@import url(./__list/header__list.css);
+@import url(./__auth/header__auth.css);
+@import url(./__item/header__item.css);
+@import url(./_main/header__item_main.css);
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(196, 196, 196);
+}

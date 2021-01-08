@@ -1,0 +1,12 @@
+.header__auth {
+  margin-right: 6.5rem;
+  padding: 11px 17.5px 11px 17px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid black;
+  border-radius: 100px;
+  background: none;
+}
