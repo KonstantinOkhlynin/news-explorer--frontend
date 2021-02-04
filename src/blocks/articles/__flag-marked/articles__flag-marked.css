@@ -1,0 +1,7 @@
+.articles__flag-marked{
+  background-image: url('../../../images/Group 12 (1).png');
+}
+
+.articles__flag-marked:hover {
+  background-image: url('../../../images/Group 12 (1).png');
+}

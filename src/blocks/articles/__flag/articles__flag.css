@@ -1,0 +1,32 @@
+.articles__flag {
+  background-image: url('../../../images/Group 13 (1).png');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+}
+
+.articles__flag:hover {
+  background-image: url('../../../images/Group 14 (1).png');
+}
+
+
+@media screen and (max-width: 1024px) {
+  .articles__flag {
+    right: 8px;
+    top: 8px;
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .articles__flag {
+    right: 16px;
+    top: 16px;
+
+  }
+}
+

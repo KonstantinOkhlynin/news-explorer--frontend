@@ -1,22 +1,32 @@
 @import url(./__not-found/articles__not-found.css);
-@import url(./__image/articles__image.css);
-@import url(./__title/articles__title.css);
-@import url(./__articles__subtitle-not-found/articles__subtitle-not-found.css);
-@import url(./__preloader/articles__preloader.css);
-@import url(./__loading-title/articles__loading-title.css);
+@import url(./__not-found-image/articles__not-found-image.css);
+@import url(./__not-found-title/articles__not-found-title.css);
+@import url(./__not-found-subtitle/articles__not-found-subtitle.css);
 @import url(./__loading/articles__loading.css);
+@import url(./__loading-preloader/articles__loading-preloader.css);
+@import url(./__loading-title/articles__loading-title.css);
+@import url(./__container/articles__container.css);
+@import url(./__result/articles__result.css);
 @import url(./__list/articles__list.css);
 @import url(./__item/articles__item.css);
-@import url(./__flag-favorites/articles__flag-favorites.css);
-@import url(./__img/articles__img.css);
-@import url(./__date/articles__date.css);
-@import url(./__title-article/articles__title-article.css);
-@import url(./__subtitle/articles__subtitle.css);
+@import url(./__flag/articles__flag.css);
+@import url(./__flag-marked/articles__flag-marked.css);
+@import url(./__article-image/articles__article-image.css);
+@import url(./__article-information/articles__article-information.css);
+@import url(./__article-date/articles__article-date.css);
+@import url(./__article-title/articles__article-title.css);
+@import url(./__article-subtitle/articles__article-subtitle.css);
+@import url(./__article-source/articles__article-source.css);
 @import url(./__button/articles__button.css);
-@import url(./__source/articles__source.css);
+
 
 
 .articles {
+
   width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   background: #F5F6F7;
 }

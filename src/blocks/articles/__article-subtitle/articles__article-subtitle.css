@@ -1,0 +1,28 @@
+.articles__article-subtitle {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: #1A1B22;
+margin: 0;
+max-width: 352px;
+height: 110px;
+overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .articles__article-subtitle {
+    max-width: 260px;
+    height: 89px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .articles__article-subtitle {
+    max-width: 360px;
+    margin-top: 2px;
+  }
+}

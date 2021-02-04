@@ -1,11 +1,10 @@
-.articles__date {
+.articles__article-date {
   font-family: 'Source Sans Pro';
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 24px;
 color: #B6BCBF;
-margin-left: 25px;
-margin-top: 16px;
+margin-top: 0;
 margin-bottom: 0;
 }

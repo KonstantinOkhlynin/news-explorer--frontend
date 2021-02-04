@@ -1,7 +1,7 @@
 .search__container {
     max-width: 42.15%;
     padding-top: 4.9375rem;
-    padding-bottom: 1.25rem;
+    padding-bottom: 1rem;
 }
 
  @media screen and (max-width: 1024px){
