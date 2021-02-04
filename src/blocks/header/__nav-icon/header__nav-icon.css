@@ -1,0 +1,22 @@
+.header__nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 650px){
+  .header__nav-icon {
+    margin: 1rem;
+    margin-right: 5.2%;
+    width: 2.125rem;
+    height: 2.125rem;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .header__nav-icon {
+    margin: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+  }
+}

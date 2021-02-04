@@ -1,0 +1,11 @@
+.articles__item {
+  border-radius: 20px;
+  background-color: #fff;
+  height: 576px;
+}
+
+/* .articles__item{
+  border-radius: 16px;
+  background-color: #fff;
+  position: relative;
+} */

@@ -1,0 +1,26 @@
+.serch__title {
+  font-family: 'Roboto Slab';
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    font-size: 375%;
+    line-height: 4rem;
+    color: #fff;
+    margin: 0
+}
+
+
+@media screen and (max-width: 768px){
+  .serch__title {
+    font-size: 225%;
+    line-height: 112%;
+    max-width: 25rem;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .serch__title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-left: 0.1875rem;
+  }
+}

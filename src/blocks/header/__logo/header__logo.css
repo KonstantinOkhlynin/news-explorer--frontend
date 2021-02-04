@@ -3,8 +3,26 @@
   font-style: normal;
   font-weight: 700;
   margin-left: 7.25%;
-  /* margin-top: 1.96rem; */
-  margin-top: 2.18%;
-  margin-bottom: 1.5625rem;
-  font-size: 1.28rem;
+  margin-top: 1.9375rem;
+  margin-bottom: 1.5rem;
+  font-size: 128%;
+  color: #ffff;
+}
+
+@media screen and (max-width: 768px){
+  .header__logo {
+    margin-left: 5.20%;
+    margin-bottom: 1.125rem;
+    margin-top: 1.5rem;
+    font-size: 124%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .header__logo {
+    margin-left: 5%;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    font-size: 100%;
+  }
 }

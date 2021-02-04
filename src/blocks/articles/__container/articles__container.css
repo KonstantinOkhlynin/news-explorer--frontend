@@ -1,0 +1,27 @@
+.articles__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+  gap: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .articles__container {
+    margin: 32px 0;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .articles__container {
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    gap: 16px;
+    margin: 24px 0
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .articles__container {
+    grid-template-columns: minmax(auto, 1fr);
+    margin: 24px 0;
+  }
+}

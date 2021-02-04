@@ -7,16 +7,176 @@
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
 </head>
 <body>
-  <div class="root">
-    <header class="header">
+  <div class="root root_page_index">
+    <header class="header ">
       <h1 class="header__logo">NewsExplorer</h1>
-      <div class="header__nav nav">
+      <nav class="header__nav">
         <ul class="header__list">
-        <li class="header__item header__item_main"><a href="./index.html" class="header__main">Главная</a></li>
-        <li class="header__item"><button class="header__auth">Авторизоваться</button></li>
-      </ul>
-      </div>
+          <li class="header__item header__item_main"><a href="./index.html" class="header__main">Главная</a></li>
+          <li class="header__item header__item_main"><a href="./about.html" class="header__main">Сохранённые статьи</a></li>
+          <li class="header__item"><button class="header__auth">Авторизоваться</button></li>
+          <!-- <li class="header__item">
+            <button class="header__auth header__auth_top">
+            <span class="header__auth-name">Грета</span>
+            <img src="<%= require('./images/logout-white.png')%>" alt="logout icon" class="header__logout-icon">
+          </button>
+        </li>-->
+        </ul>
+      </nav>
+      <img src="<%= require('./images/menu.png')%>" alt="" class="header__nav-icon">
     </header>
+
+    <section class="search">
+    <div class="search__container">
+      <h2 class="serch__title">Что творится в мире?</h2>
+      <p class="search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+
+      <form class="search__form">
+        <input class="search__input" type="text" placeholder="Введите тему новости">
+        <button class="search__button" type="submit">Искать</button>
+      </form>
+    </div>
+    </section>
+
+    <!-- <section class="articles"> -->
+
+      <!-- <div class="articles__not-found">
+        <img src="<%=require('./images/not-found-v1.png')%>" alt="" class="articles__image">
+        <p class="articles__not-found-title">Ничего не найдено</p>
+        <p class="articles__subtitle-not-found">К сожалению по вашему запросу
+          ничего не найдено.</p>
+      </div>
+
+      <div class="articles__loading">
+        <div class="articles__preloader"></div>
+        <p class="articles__loading-title">Идет поиск новостей...</p>
+      </div> -->
+
+
+      <!-- <h2 class="articles__title">Результаты поиска</h2>
+        <div class="articles__container">
+          <article class="articles__item article">
+            <div class="articles__flag-favorites"></div>
+            <div class="article__icon-massage">Войдите, чтобы сохранять статьи</div>
+            <picture>
+              <img src="<%=require('./images/image8.png')%>" alt="Фото новости" class="article__image">
+            </picture>
+            <div class="article__container">
+              <time class="article__date">2 августа, 2019</time>
+              <h3 class="article__title">Национальное достояние - парки</h3>
+              <p class="article__description">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных
+                парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+              </p>
+              <address class="article__address">лента.ру </address>
+            </div>
+          </article>
+          <article class="articles__item article">
+            <div class="article__icon article__icon_type_unmarked"></div>
+            <div class="article__icon-massage">Войдите, чтобы сохранять статьи</div>
+            <picture>
+              <img src="<%=require('./images/image_04.png')%>" alt="Фото новости" class="article__image">
+            </picture>
+            <div class="article__container">
+              <time class="article__date">2 августа, 2019</time>
+              <h3 class="article__title">Национальное достояние - парки</h3>
+              <p class="article__description">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных
+                парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+              </p>
+              <address class="article__address">лента.ру </address>
+            </div>
+          </article>
+          <article class="articles__item article">
+            <div class="article__icon article__icon_type_unmarked"></div>
+            <div class="article__icon-massage">Войдите, чтобы сохранять статьи</div>
+            <picture>
+              <img src="<%=require('./images/image_07.png')%>" alt="Фото новости" class="article__image">
+            </picture>
+            <div class="article__container">
+              <time class="article__date">2 августа, 2019</time>
+              <h3 class="article__title">Национальное достояние - парки</h3>
+              <p class="article__description">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных
+                парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+              </p>
+              <address class="article__address">лента.ру</address>
+            </div> -->
+
+
+
+      <!-- <h2 class="articles__title">Результаты поиска</h2>
+      <div class="articles__list">
+
+        <div class="articles__item">
+          <div class="articles__flag-favorites"></div>
+          <img src="<%=require('./images/image8.png')%>" alt="" class="articles__img">
+           <div class="articles__text">
+          <p class="articles__date">2 августа, 2019</p>
+          <h2 class="articles__title-article">Национальное достояние – парки</h2>
+          <p class="articles__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <p class="articles__source">Лента.ру</p>
+        </div>
+        </div>
+
+        <div class="articles__item">
+          <div class="articles__flag-favorites"></div>
+          <img src="<%=require('./images/image_04.png')%>" alt="" class="articles__img">
+          <p class="articles__date">2 августа, 2019</p>
+          <h2 class="articles__title-article">Национальное достояние – парки</h2>
+          <p class="articles__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <p class="articles__source">Лента.ру</p>
+        </div>
+
+        <div class="articles__item">
+          <div class="articles__flag-favorites"></div>
+          <img src="<%=require('./images/image_07.png')%>" alt="" class="articles__img">
+          <p class="articles__date">2 августа, 2019</p>
+          <h2 class="articles__title-article">Национальное достояние – парки</h2>
+          <p class="articles__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <p class="articles__source">Лента.ру</p>
+        </div>
+
+
+      </div>
+      <button class="articles__button">Показать еще</button>
+
+
+    </section> -->
+
+
+
+
+
+    <!-- <section class="popup">
+      <div class="popup__background slim-block">
+        <header class="header header_type_popup-closed">
+          <a href="index.html" class="header__logo">NewsExplorer</a>
+          <button class="popup__mobile-menu header__mobile-menu_type_opened"></button>
+        </header>
+        <div class="popup__links">
+          <a href="index.html" class="popup__link">Главная</a>
+          <a href="articles.html" class="popup__link">Сохранённые статьи</a>
+        </div>
+        <button class="popup__button button">Авторизоваться</button>
+      </div>
+    </section>
+    <section class="popup-auth">
+      <div class="popup-auth__background">
+        <h2 class="popup-auth__title">Вход</h2>
+        <div class="popup-auth__inputs inputs">
+          <p class="inputs__name">Email</p>
+          <input type="email" class="inputs__item" required placeholder="Введите почту">
+          <span class="error-message error-message__hidden">Неправильный формат email</span>
+          <p class="inputs__name">Пароль</p>
+          <input type="password" class="inputs__item" required placeholder="Введите пароль">
+          <span class="error-message error-message__hidden"></span>
+        </div>
+        <button class="popup-auth__button button popup-auth__button_active">Войти</button>
+        <p class="popup-auth__subtitle">или <a href="" class="popup-auth__reg-link">Зарегистрироваться</a></p>
+        <img src="<%= require('./images/close.svg') %>" alt="Кнопка закрытия" class="popup-auth__close">
+      </div>
+    </section> -->
 
 
   </div>

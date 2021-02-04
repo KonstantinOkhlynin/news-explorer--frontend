@@ -1,0 +1,32 @@
+.articles__button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  width: 288px;
+  height: 64px;
+  font-size: 18px;
+  background: #FFFFFF;
+  border-radius: 80px;
+  align-self: center;
+  margin: 63px 0 82px 576px;
+  border: 0;
+}
+.articles__button:hover {
+  background: #e8e8e9;
+}
+
+@media screen and (max-width: 1024px) {
+  .articles__button {
+    width: 240px;
+    height: 56px;
+    margin: 0 0 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .articles__button {
+    width: 288px;
+    height: 56px;
+    margin: -8px 0 32px;
+  }
+}
