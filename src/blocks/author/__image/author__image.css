@@ -1,0 +1,14 @@
+.author__image {
+width: 464px;
+height: 464px;
+background-repeat:no-repeat;
+background-size: cover;
+background-image: url('../../../images/image-03.png');
+}
+
+@media screen and (max-width: 768px) {
+  .author__image {
+    width: 232px;
+    height: 232px;
+}
+}

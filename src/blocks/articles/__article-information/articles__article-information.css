@@ -3,13 +3,13 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .articles__text {
+  .articles__article-information {
     padding: 16px 16px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .articles__text {
+  .articles__article-information {
     padding: 11px 16px 16px;
   }
 }

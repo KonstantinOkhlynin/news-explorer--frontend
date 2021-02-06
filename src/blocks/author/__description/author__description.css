@@ -1,0 +1,7 @@
+.author__description {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin-left: 56px;
+  margin-bottom: 210px;
+}
