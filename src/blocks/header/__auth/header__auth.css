@@ -10,6 +10,7 @@
   border-radius: 6.25rem;
   background: none;
   outline: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px){

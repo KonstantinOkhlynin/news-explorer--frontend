@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 500px){
   .search__input {
-    width: 100%;
+    width: 99%;
     box-sizing: border-box;
   }
 }

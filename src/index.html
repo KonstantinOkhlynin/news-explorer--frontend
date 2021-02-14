@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
 </head>
 <body>
-  <div class="root root_page_index">
-    <header class="header ">
+  <div class="root root__image">
+    <header class="header">
       <h1 class="header__logo">NewsExplorer</h1>
       <nav class="header__nav">
         <ul class="header__list">
-          <li class="header__item header__item_main"><a href="./index.html" class="header__main">Главная</a></li>
-          <li class="header__item header__item_main"><a href="./about.html" class="header__main">Сохранённые статьи</a></li>
+          <li class="header__item header__item_main"><a href="./index.html" class="header__main header__bottom-line">Главная</a></li>
+          <li class="header__item header__item_main"><a href="./about.html" class="header__main header__main-mod">Сохранённые статьи</a></li>
           <li class="header__item"><button class="header__auth">Авторизоваться</button></li>
           <!-- <li class="header__item">
             <button class="header__auth header__auth_top">
@@ -104,51 +104,143 @@
 
     </section>
 
-    <!-- <section class="author">
+    <section class="author">
 
       <div class="author__image"></div>
       <div class="author__description">
       <h3 class="author__title">Об авторе</h3>
-      <p class="author__subtitle">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+      <p class="author__subtitle">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.<br><br>
       Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
     </div>
 
-    </section> -->
-
-
-
-
-
-    <!-- <section class="popup">
-      <div class="popup__background slim-block">
-        <header class="header header_type_popup-closed">
-          <a href="index.html" class="header__logo">NewsExplorer</a>
-          <button class="popup__mobile-menu header__mobile-menu_type_opened"></button>
-        </header>
-        <div class="popup__links">
-          <a href="index.html" class="popup__link">Главная</a>
-          <a href="articles.html" class="popup__link">Сохранённые статьи</a>
-        </div>
-        <button class="popup__button button">Авторизоваться</button>
-      </div>
     </section>
-    <section class="popup-auth">
-      <div class="popup-auth__background">
-        <h2 class="popup-auth__title">Вход</h2>
-        <div class="popup-auth__inputs inputs">
-          <p class="inputs__name">Email</p>
-          <input type="email" class="inputs__item" required placeholder="Введите почту">
-          <span class="error-message error-message__hidden">Неправильный формат email</span>
-          <p class="inputs__name">Пароль</p>
-          <input type="password" class="inputs__item" required placeholder="Введите пароль">
-          <span class="error-message error-message__hidden"></span>
-        </div>
-        <button class="popup-auth__button button popup-auth__button_active">Войти</button>
-        <p class="popup-auth__subtitle">или <a href="" class="popup-auth__reg-link">Зарегистрироваться</a></p>
-        <img src="<%= require('./images/close.svg') %>" alt="Кнопка закрытия" class="popup-auth__close">
-      </div>
-    </section> -->
 
+    <footer class="footer">
+      <div class="footer__copyright">&copy; 2020 Supersite, Powered by News API</div>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="./index.html">Главная</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://praktikum.yandex.ru/"
+              target="_blank">Яндекс.Практикум</a>
+          </li>
+        </ul>
+        <div class="footer__social">
+          <a href="https://github.com" class="footer__link-social">
+            <img class="footer__social-icon" src="<%=require('./images/github.svg')%>" alt=" github icon">
+          </a>
+          <a href="https://facebook.com" class="footer__link-social">
+            <img class="footer__social-icon" src="<%=require('./images/fb.svg')%>" alt="facebook icon ">
+          </a>
+
+        </div>
+      </nav>
+    </footer>
+
+    <div class="popup">
+      <div class="popup__content">
+        <img class="popup__close" src="<%=require('./images/popup-close-white.svg')%>" alt="Закрыть">
+        <h3 class="popup__title">Вход</h3>
+        <form class="form" name="login" novalidate>
+          <div class="form__input-block">
+            <label for="email-login" class="form__label"><span class="popup__colored-text">Email</span></label>
+            <input
+              class="form__input form__input_type_email"
+              type="email"
+              id="email-login"
+              name="email-login"
+              placeholder="Введите Email"
+              required
+            >
+            <span id="email-error-login" class="form__error">Неправильный формат email</span>
+          </div>
+          <div class="form__input-block">
+            <label for="password" class="form__label"><span class="popup__colored-text">Пароль</span></label>
+            <input
+              class="form__input form__input_type_password"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Введите пароль"
+              required
+              minlength="8"
+              pattern=".[^\s]{8,}"
+            >
+            <span id="password-error-login" class="form__error">Введите более 8 символов</span>
+          </div>
+          <div class="form__input-block"></div>
+          <button type="submit" name="button" class="form__button ">Войти</button>
+        </form>
+        <p class="popup__text">или
+          <span class="popup__link popup__colored-text">Зарегистрироваться</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="popup popup__signup ">
+      <div class="popup__content">
+        <img class="popup__close" src="<%=require('./images/popup-close-white.svg')%>" alt="Закрыть">
+        <h3 class="popup__title">Регистрация</h3>
+        <form class="form" name="signup" novalidate>
+          <div class="form__input-block">
+            <label for="email-signup" class="form__label"><span class="popup__colored-text">Email</span></label>
+            <input
+              class="form__input form__input_type_email"
+              type="email"
+              id="email-signup"
+              name="email-signup"
+              placeholder="Введите Email"
+              required
+            >
+            <span id="email-error-signup" class="form__error">Неправильный формат email</span>
+          </div>
+          <div class="form__input-block">
+            <label for="password" class="form__label"><span class="popup__colored-text">Пароль</span></label>
+            <input
+              class="form__input form__input_type_password"
+              type="password"
+              id="password-signup"
+              name="password-signup"
+              placeholder="Введите пароль"
+              required
+              minlength="8"
+              pattern=".[^\s]{8,}"
+            >
+            <span id="password-error-signup" class="form__error">Введите более 8 символов</span>
+          </div>
+          <div class="form__input-block">
+            <label for="name" class="form__label"><span class="popup__colored-text">Имя</span></label>
+            <input
+              class="form__input form__input_type_name"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Введите своё имя"
+              required
+              minlength="2"
+              maxlength="30"
+              pattern="^(?!-)(?!.*--)[А-ЯЁа-яёa-zA-z]+(-[А-ЯЁа-яёa-zA-Z]+)?"
+            >
+            <span id="name-error" class="form__error">Введите не менее 2 символов</span>
+          </div>
+          <div class="form__input-block">
+            <span id="already-exists-error" class="form__error form__error_centre">Такой пользователь уже зарегестрирован</span>
+            <button type="submit" name="button" class="form__button">Зарегистрироваться</button>
+          </div>
+        </form>
+        <p class="popup__text">или <span class="popup__link popup__colored-text">Войти</span></p>
+      </div>
+    </div>
+
+    <div class="popup popup__success">
+      <div class="popup__content">
+        <img class="popup__close" src="<%=require('./images/popup-close-white.svg')%>" alt="Закрыть">
+        <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+        <p class="popup__text popup__text_left"><span class="popup__colored-text popup__link">Войти</span></p>
+      </div>
+    </div>
 
   </div>
   <script src="<%=htmlWebpackPlugin.files.js%>"></script>

@@ -5,16 +5,16 @@
   font-size: 112.5%;
   line-height: 1.5rem;
   text-decoration: none;
-  padding-bottom: 1.5rem;
+  /* padding-bottom: 1.5rem; */
   color: #fff;
-  border-bottom: 0.1875rem solid #fff;
+  /* border-bottom: 0.1875rem solid #fff; */
 }
 
 
 @media screen and (max-width: 768px){
   .header__main {
     font-size: 100%;
-    padding-bottom: 1.22rem;
+    /* padding-bottom: 1.22rem; */
   }
 }
 

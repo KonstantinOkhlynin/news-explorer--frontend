@@ -1,0 +1,16 @@
+@import url(./__name/articles-info__name.css);
+@import url(./__title/articles-info__title.css);
+@import url(./_count/articles-info__title_count.css);
+@import url(./__subtitle/articles-info__subtitle.css);
+@import url(./_tags/articles-info__subtitle_tags.css);
+@import url(./_tags-count/articles-info__subtitle_tags-count.css);
+
+.articles-info {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 104px;
+    padding-top: 40px;
+    padding-bottom: 56px;
+
+}

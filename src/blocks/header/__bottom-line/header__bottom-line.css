@@ -1,0 +1,10 @@
+.header__bottom-line {
+  border-bottom: 0.1875rem solid #fff;
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px){
+  .header__bottom-line {
+    padding-bottom: 1.22rem;
+  }
+}

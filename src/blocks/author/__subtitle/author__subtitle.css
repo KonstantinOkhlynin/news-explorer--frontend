@@ -9,6 +9,17 @@
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .author__subtitle {
+    margin-top: 9px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .author__subtitle {
+    margin-top: 15px;
+  }
+}
 /* @media screen and (max-width: 768px) {
   .articles__result {
     font-size: 30px;
