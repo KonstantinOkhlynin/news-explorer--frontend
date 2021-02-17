@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
+  <link rel="icon" href="<%=require('./images/Group.png')%>" type="image/ico">
 </head>
 <body>
   <div class="root root__image">
@@ -23,7 +24,7 @@
         </li>-->
         </ul>
       </nav>
-      <img src="<%= require('./images/menu.png')%>" alt="" class="header__nav-icon">
+      <img src="<%= require('./images/menu.png')%>" alt="Иконка для активации меню" class="header__nav-icon">
     </header>
 
     <section class="search">
@@ -32,7 +33,7 @@
       <p class="search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
 
       <form class="search__form">
-        <input class="search__input" type="text" placeholder="Введите тему новости">
+        <input class="search__input" type="text" required placeholder="Введите тему новости">
         <button class="search__button" type="submit">Искать</button>
       </form>
     </div>
@@ -41,7 +42,7 @@
     <section class="articles">
 
       <div class="articles__not-found">
-        <img src="<%=require('./images/not-found-v1.png')%>" alt="" class="articles__not-found-image">
+        <img src="<%=require('./images/not-found-v1.png')%>" alt="Иконка ничего не найдено" class="articles__not-found-image">
         <p class="articles__not-found-title">Ничего не найдено</p>
         <p class="articles__not-found-subtitle">К сожалению по вашему запросу
           ничего не найдено.</p>
@@ -63,7 +64,7 @@
 
         <div class="articles__item">
           <div class="articles__flag articles__flag-marked"></div>
-          <img src="<%=require('./images/image8.png')%>" alt="" class="articles__article-image">
+          <img src="<%=require('./images/image8.png')%>" alt="Картинка новости" class="articles__article-image">
            <div class="articles__article-information">
           <p class="articles__article-date">2 августа, 2019</p>
           <h2 class="articles__article-title">Национальное достояние – парки</h2>
@@ -74,7 +75,7 @@
 
         <div class="articles__item">
           <div class="articles__flag"></div>
-          <img src="<%=require('./images/image_04.png')%>" alt="" class="articles__article-image">
+          <img src="<%=require('./images/image_04.png')%>" alt="Картинка новости" class="articles__article-image">
           <div class="articles__article-information">
           <p class="articles__article-date">2 августа, 2019</p>
           <h2 class="articles__article-title">Национальное достояние – парки</h2>
@@ -85,7 +86,7 @@
 
         <div class="articles__item">
           <div class="articles__flag"></div>
-          <img src="<%=require('./images/image_07.png')%>" alt="" class="articles__article-image">
+          <img src="<%=require('./images/image_07.png')%>" alt="Картинка новости" class="articles__article-image">
           <div class="articles__article-information">
           <p class="articles__article-date">2 августа, 2019</p>
           <h2 class="articles__article-title">Национальное достояние – парки</h2>
@@ -238,6 +239,24 @@
         <p class="popup__text popup__text_left"><span class="popup__colored-text popup__link">Войти</span></p>
       </div>
     </div>
+
+    <!-- <div class="mobile-menu">
+      <div class="mobile-menu__container">
+      <div class="mobile-menu__header">
+        <h1 class="header__logo">NewsExplorer</h1>
+        <img class="mobile-menu__close" src="<%=require('./images/popup-close-white.svg')%>" alt="Закрыть">
+      </div>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item-main"><a href="./index.html" class="header__main mobile-menu__main">Главная</a></li>
+            <li class="mobile-menu__item-saved"><a href="./about.html" class="header__main mobile-menu__saved">Сохранённые статьи</a></li>
+            <li class="mobile-menu__item"><button class="header__auth mobile-menu__auth">Авторизоваться</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div> -->
+
 
   </div>
   <script src="<%=htmlWebpackPlugin.files.js%>"></script>

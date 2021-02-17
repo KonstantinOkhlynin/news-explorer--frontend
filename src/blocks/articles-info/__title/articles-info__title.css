@@ -1,5 +1,5 @@
 .articles-info__title {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -8,4 +8,11 @@
   margin-top: 30px;
   margin-bottom: 0px;
   max-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .articles-info__title {
+    font-size: 30px;
+    margin-top: 16px;
+  }
 }

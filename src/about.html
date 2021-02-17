@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
+  <link rel="icon" href="<%=require('./images/Group.png')%>" type="image/ico">
 </head>
 <body>
   <div class="root">
@@ -22,7 +23,7 @@
         </li>
         </ul>
       </nav>
-      <img src="<%= require('./images/menu.png')%>" alt="" class="header__nav-icon">
+      <img src="<%= require('./images/menu-black.png')%>" alt="" class="header__nav-icon">
     </header>
 
     <section class="articles-info">
@@ -39,7 +40,7 @@
 
         <div class="articles__item">
           <div class="articles__flag articles__flag-marked"></div>
-          <img src="<%=require('./images/image8.png')%>" alt="" class="articles__article-image">
+          <img src="<%=require('./images/image8.png')%>" alt="Картинка новости" class="articles__article-image">
            <div class="articles__article-information">
           <p class="articles__article-date">2 августа, 2019</p>
           <h2 class="articles__article-title">Национальное достояние – парки</h2>
@@ -50,7 +51,7 @@
 
         <div class="articles__item">
           <div class="articles__flag"></div>
-          <img src="<%=require('./images/image_04.png')%>" alt="" class="articles__article-image">
+          <img src="<%=require('./images/image_04.png')%>" alt="Картинка новости" class="articles__article-image">
           <div class="articles__article-information">
           <p class="articles__article-date">2 августа, 2019</p>
           <h2 class="articles__article-title">Национальное достояние – парки</h2>
@@ -61,7 +62,7 @@
 
         <div class="articles__item">
           <div class="articles__flag"></div>
-          <img src="<%=require('./images/image_07.png')%>" alt="" class="articles__article-image">
+          <img src="<%=require('./images/image_07.png')%>" alt="Картинка новости" class="articles__article-image">
           <div class="articles__article-information">
           <p class="articles__article-date">2 августа, 2019</p>
           <h2 class="articles__article-title">Национальное достояние – парки</h2>
@@ -71,7 +72,7 @@
         </div>
         <div class="articles__item">
           <div class="articles__flag"></div>
-          <img src="<%=require('./images/image_04.png')%>" alt="" class="articles__article-image">
+          <img src="<%=require('./images/image_04.png')%>" alt="Картинка новости" class="articles__article-image">
           <div class="articles__article-information">
           <p class="articles__article-date">2 августа, 2019</p>
           <h2 class="articles__article-title">Национальное достояние – парки</h2>
@@ -82,7 +83,7 @@
 
         <div class="articles__item">
           <div class="articles__flag"></div>
-          <img src="<%=require('./images/image_07.png')%>" alt="" class="articles__article-image">
+          <img src="<%=require('./images/image_07.png')%>" alt="Картинка новости" class="articles__article-image">
           <div class="articles__article-information">
           <p class="articles__article-date">2 августа, 2019</p>
           <h2 class="articles__article-title">Национальное достояние – парки</h2>
@@ -120,6 +121,23 @@
         </div>
       </nav>
     </footer>
+
+    <!-- <div class="mobile-menu">
+      <div class="mobile-menu__container">
+      <div class="mobile-menu__header">
+        <h1 class="header__logo">NewsExplorer</h1>
+        <img class="mobile-menu__close" src="<%=require('./images/popup-close-white.svg')%>" alt="Закрыть">
+      </div>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item-main"><a href="./index.html" class="header__main mobile-menu__main">Главная</a></li>
+            <li class="mobile-menu__item-saved"><a href="./about.html" class="header__main mobile-menu__saved">Сохранённые статьи</a></li>
+            <li class="mobile-menu__item"><button class="header__auth mobile-menu__auth">Авторизоваться</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div> -->
 
 
 

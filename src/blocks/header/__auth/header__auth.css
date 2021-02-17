@@ -1,6 +1,6 @@
 .header__auth {
   padding: 0.6875rem 1.01rem .6875rem 1.1rem;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 112.5%;

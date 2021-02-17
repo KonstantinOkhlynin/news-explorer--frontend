@@ -1,6 +1,6 @@
 .search__button {
     color: #fff;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 1.125rem;
     border: .0625rem solid #2f71e5;
