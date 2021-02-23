@@ -1,0 +1,30 @@
+.articles__container {
+  display: flex;
+    flex-direction: column;
+    background: #f5f6f7;
+    padding: 82px 104px;
+}
+
+@media screen and (max-width: 1024px) {
+  .articles__container {
+    padding: 42px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .articles__container {
+    padding: 41px 40px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .articles__container {
+    padding: 41px 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .articles__container {
+    padding: 33px 16px 32px;
+  }
+}

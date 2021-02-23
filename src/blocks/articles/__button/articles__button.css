@@ -1,0 +1,41 @@
+.articles__button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  width: 288px;
+  height: 64px;
+  font-size: 18px;
+  background: #FFFFFF;
+  border-radius: 80px;
+  align-self: center;
+  margin-top: 64px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.articles__button:hover {
+  background: #e8e8e9;
+}
+
+@media screen and (max-width: 1024px) {
+  .articles__button {
+    width: 240px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .articles__button {
+    margin-top: 32px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .articles__button {
+    width: 288px;
+    height: 56px;
+    margin-top: 21px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}

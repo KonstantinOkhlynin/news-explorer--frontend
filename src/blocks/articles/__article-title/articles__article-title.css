@@ -1,0 +1,39 @@
+.articles__article-title{
+  font-family: 'Roboto Slab', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.625rem;
+  line-height: 1.875rem;
+  color: #1A1B22;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  max-width: 350px;
+  height: 60px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .articles__article-title {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .articles__article-title {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 0;
+    height: 80px;
+    margin-top: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .articles__article-title {
+    height: 60px;
+    line-height: 26px;
+    margin-top: 12px;
+  }
+}

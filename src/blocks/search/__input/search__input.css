@@ -1,0 +1,26 @@
+.search__input {
+  font-family: 'Roboto', sans-serif;
+    border: .0625rem solid #d1d2d6;
+    border-radius: 6.25rem;
+    width: 95%;
+    margin-left: 0.1875rem;
+    height: 64px;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px){
+  .search__input {
+    font-size: 1rem;
+    width: 95%;
+    height: 3.5rem;
+  }
+}
+
+
+@media screen and (max-width: 500px){
+  .search__input {
+    width: 99%;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,20 @@
+.root__image {
+  background-image: url('../../../images/header.jpg');
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .root__image{
+    background-image: url('../../../images/header_768.jpg');
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .root__image{
+    background-image: url('../../../images/header_320.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+}

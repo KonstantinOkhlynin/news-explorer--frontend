@@ -1,0 +1,10 @@
+.articles__not-found-title {
+  font-family: 'Roboto Slab', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.625rem;
+  line-height: 1.875rem;
+  color: #1A1B22;
+  margin-top: 21px;
+  margin-bottom: 0;
+}

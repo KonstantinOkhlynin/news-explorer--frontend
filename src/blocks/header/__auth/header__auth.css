@@ -1,0 +1,22 @@
+.header__auth {
+  padding: 0.6875rem 1.01rem .6875rem 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 112.5%;
+  line-height: 1.5rem;
+  color:#fff;
+  border: 0.0625rem solid #fff;
+  border-radius: 6.25rem;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+  .header__auth {
+    font-size: 100%;
+    padding: 0.5rem 0.75rem 0.4rem;
+  }
+}
+
