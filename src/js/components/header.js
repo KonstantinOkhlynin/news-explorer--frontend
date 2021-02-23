@@ -45,11 +45,11 @@ class Header{
             });
              document.querySelector('.header__item_main:nth-child(2)').style.display = 'none'
 
-            if (this._popup){
-                document.querySelectorAll('.header__auth').forEach((item)=>{
-                    item.addEventListener('click',this._popup.open);
-                })
-            }
+             if (this._popup){
+              document.querySelectorAll('.header__auth').forEach((item)=>{
+              item.addEventListener('click', (e)=>{ if (!e.target.classList.contains('header__logout-icon')){this._popup.open()}});
+              })
+              }
         }
     }
 }

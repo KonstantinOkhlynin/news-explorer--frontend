@@ -32,11 +32,22 @@ class NewsCardList{
             if (_startNumber===0){
                 _articlesList.innerHTML=''
             }
-            for (let i = _startNumber; i<_articles.length && i<_startNumber+NEWS_PER_PAGE ; ++i){
-
-                const card = new NewsCard({..._articles[i],number:i});
-                _articlesList.innerHTML += card.create()
+            if (window.location.toString().indexOf('about')>0){
+                _articles.forEach((item,i)=>{
+                    //if (item.owner === localStorage.token){
+                        const card = new NewsCard({..._articles[i],number:i});
+                        _articlesList.innerHTML += card.create()
+                    //}
+                })
             }
+            else{
+                for (let i = _startNumber; i<_articles.length && i<_startNumber+NEWS_PER_PAGE ; ++i){
+
+                    const card = new NewsCard({..._articles[i],number:i});
+                    _articlesList.innerHTML += card.create()
+                }
+            }
+
             this._startNumber = _startNumber + NEWS_PER_PAGE;
         }
         else{
@@ -44,7 +55,7 @@ class NewsCardList{
                 `
                 <div></div>
               <div class="articles__not-found">
-                <img src="../../../images/not-found-v1.png" alt="" class="articles__not-found-image">
+                <img src="https://ic.wampi.ru/2021/02/23/not-found-v1.png" alt="" class="articles__not-found-image">
                 <p class="articles__not-found-title">Ничего не найдено</p>
                 <p class="articles__not-found-subtitle">К сожалению по вашему запросу
                   ничего не найдено.</p>

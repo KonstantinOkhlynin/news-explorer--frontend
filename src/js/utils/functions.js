@@ -85,7 +85,7 @@ const markingArticle = (e, article)=>{
 
     const mainApi = new MainApi();
     const token = localStorage.token;
-    if ( !e.target.classList.contains('articles__flag-marked')){
+    if ( !e.target.classList.contains('articles__flag-trash')){
         const preparingArticle = {
             keyword: article.keyword,
             title: article.title,
@@ -97,7 +97,7 @@ const markingArticle = (e, article)=>{
         }
         mainApi.createArticle(preparingArticle,token)
             .then((res)=>{
-                e.target.classList.toggle('articles__flag-marked');
+                e.target.classList.toggle('articles__flag-trash');
             })
             .catch((err)=>{
                 console.error(err)
@@ -126,8 +126,12 @@ const getMarkingArticles = ()=>{
         .then((res)=>{
             document.querySelector('.articles-info__title_count').innerHTML = res.length;
             const keywords = new Set();
+            let count = 0;
             const preparingArticles = res.map((item)=>{
-                keywords.add(item.keyword)
+                //if (item.owner === localStorage.token){
+                    keywords.add(item.keyword)
+                    count++;
+                //}
                 return {
                     title: item.title,
                     description: item.text,
@@ -141,7 +145,7 @@ const getMarkingArticles = ()=>{
             const tags = document.querySelector('.articles-info__subtitle_tags')
             const keywordsArray = Array.from(keywords);
             tags.innerHTML = [keywordsArray[0],keywordsArray[1]].join(', ')
-            const otherKeywordsCount = keywordsArray.length - 2;
+            const otherKeywordsCount = count - 2;
             document.querySelector('.articles-info__subtitle_tags-count').innerHTML = otherKeywordsCount > 0 ? ` и ${otherKeywordsCount}-м другим` : '';
             newsCardList.setArticles(preparingArticles);
             // newsCardList.renderLoaderNone();
