@@ -11,7 +11,7 @@ class NewsCard{
         const {urlToImage, publishedAt,title,description,url,source,number,id} = this._info
         const dispDate = FormDispDate(publishedAt);
         let flag = 'articles__flag';
-        flag += id ? ' articles__flag-marked' :''
+        flag += id ? ' articles__flag-trash' :''
         console.dir(flag);
 
         const card = `

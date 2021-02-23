@@ -34,7 +34,7 @@ class Header{
                 item.style.display = "inline"
                 item.addEventListener('click',()=>{logout(this)});
             });
-            // document.querySelector('.header__item_main-saved').style.visibility = 'visible'
+             document.querySelector('.header__item_main:nth-child(2)').style.display = 'block'
         }
         else{
             header.querySelectorAll('.header__auth-name').forEach((item)=>{
@@ -43,7 +43,7 @@ class Header{
             logoutIcons.forEach((item)=>{
                 item.style.display = "none"
             });
-            // document.querySelector('.header__item_main-saved').style.visibility = 'hidden'
+             document.querySelector('.header__item_main:nth-child(2)').style.display = 'none'
 
             if (this._popup){
                 document.querySelectorAll('.header__auth').forEach((item)=>{

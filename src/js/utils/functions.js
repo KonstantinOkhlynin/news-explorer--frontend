@@ -29,7 +29,7 @@ const getNews = (query)=>{
     )
     const articlesContainer = document.querySelector('.articles__list')
     const newsCardList = new NewsCardList([]);
-    // newsCardList.renderLoader();
+     newsCardList.renderLoader();
 
     newsApi.getNews(query)
 

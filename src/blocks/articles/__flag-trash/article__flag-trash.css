@@ -1,0 +1,7 @@
+.articles__flag-trash{
+    background-image: url('../../../images/Group 12.png');
+  }
+.articles__flag-trash:hover{
+  background-image: url('../../../images/Group 12.png');
+}
+  

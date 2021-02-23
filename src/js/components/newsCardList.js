@@ -16,6 +16,7 @@ class NewsCardList{
     renderLoader(){
       this._articlesList.innerHTML=(
             `
+            <div></div>
             <div class="articles__loading">
                 <div class="articles__loading-preloader"></div>
                 <p class="articles__loading-title">Идет поиск новостей...</p>
@@ -41,6 +42,7 @@ class NewsCardList{
         else{
             _articlesList.innerHTML=(
                 `
+                <div></div>
               <div class="articles__not-found">
                 <img src="../../../images/not-found-v1.png" alt="" class="articles__not-found-image">
                 <p class="articles__not-found-title">Ничего не найдено</p>
