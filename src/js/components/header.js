@@ -5,6 +5,7 @@ class Header{
         this._color = color;
         this._popup = popup;
         this.render = this.render.bind(this);
+        this._openPopup = this._openPopup.bind(this)
     }
     render(props){
         const {isLoggedIn, userName} = props;
@@ -13,7 +14,7 @@ class Header{
 
         const menu = document.querySelector('.mobile-menu');
         const navIcon = document.querySelector('.header__nav-icon');
-        console.log(',');
+        console.log(this._popup);
 
         navIcon.addEventListener('click',()=>{
             menu.style.display='block';
@@ -34,7 +35,11 @@ class Header{
                 item.style.display = "inline"
                 item.addEventListener('click',()=>{logout(this)});
             });
-             document.querySelector('.header__item_main:nth-child(2)').style.display = 'block'
+          
+                document.querySelectorAll('.header__auth').forEach((item)=>{
+                    item.removeEventListener('click',this._openPopup);
+                })
+             document.querySelector('.header__item_main:nth-child(2)').style.visibility = 'visible'
         }
         else{
             header.querySelectorAll('.header__auth-name').forEach((item)=>{
@@ -43,13 +48,21 @@ class Header{
             logoutIcons.forEach((item)=>{
                 item.style.display = "none"
             });
-             document.querySelector('.header__item_main:nth-child(2)').style.display = 'none'
+             document.querySelector('.header__item_main:nth-child(2)').style.visibility = 'hidden'
 
-             if (this._popup){
-              document.querySelectorAll('.header__auth').forEach((item)=>{
-              item.addEventListener('click', (e)=>{ if (!e.target.classList.contains('header__logout-icon')){this._popup.open()}});
-              })
-              }
+            
+ 
+            if (this._popup){
+                document.querySelectorAll('.header__auth').forEach((item)=>{
+                    item.addEventListener('click', this._openPopup);
+                })
+            }
+        }
+    }
+
+    _openPopup(e){        
+        if (!e.target.classList.contains('header__logout-icon')){
+            this._popup.open()
         }
     }
 }
