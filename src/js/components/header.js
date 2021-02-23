@@ -35,11 +35,11 @@ class Header{
                 item.style.display = "inline"
                 item.addEventListener('click',()=>{logout(this)});
             });
-          
+
                 document.querySelectorAll('.header__auth').forEach((item)=>{
                     item.removeEventListener('click',this._openPopup);
                 })
-             document.querySelector('.header__item_main:nth-child(2)').style.visibility = 'visible'
+             document.querySelector('.header__item_main:nth-child(2)').style.display = 'block'
         }
         else{
             header.querySelectorAll('.header__auth-name').forEach((item)=>{
@@ -48,10 +48,10 @@ class Header{
             logoutIcons.forEach((item)=>{
                 item.style.display = "none"
             });
-             document.querySelector('.header__item_main:nth-child(2)').style.visibility = 'hidden'
+             document.querySelector('.header__item_main:nth-child(2)').style.display = 'none'
 
-            
- 
+
+
             if (this._popup){
                 document.querySelectorAll('.header__auth').forEach((item)=>{
                     item.addEventListener('click', this._openPopup);
@@ -60,7 +60,7 @@ class Header{
         }
     }
 
-    _openPopup(e){        
+    _openPopup(e){
         if (!e.target.classList.contains('header__logout-icon')){
             this._popup.open()
         }
