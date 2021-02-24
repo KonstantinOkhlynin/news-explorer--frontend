@@ -14,7 +14,7 @@ class Form{
   _validateInputElement(input){
       const text = input.value;
       if (input.classList.contains('search__input')){
-          return text.length>3;
+          return true;
       }
       switch (input.type){
           case "email":{
