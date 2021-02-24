@@ -32,11 +32,16 @@
       <p class="search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
 
       <form class="search__form">
-        <input class="search__input"
+        <div class="form__input-block">
+          <input class="search__input"
                 name="query"
                 type="text"
                 placeholder="Введите тему новости"
-                data-propname="query">
+                data-propname="query"
+                minlength="3">
+        <span id="search-error" class="form__error">Введите более 8 символов</span>
+        </div>
+
         <button class="search__button" type="submit">Искать</button>
       </form>
     </div>

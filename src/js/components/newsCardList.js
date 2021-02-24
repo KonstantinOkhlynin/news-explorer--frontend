@@ -36,7 +36,7 @@ class NewsCardList{
                 _articles.forEach((item,i)=>{
                     //if (item.owner === localStorage.token){
                         const card = new NewsCard({..._articles[i],number:i});
-                        _articlesList.innerHTML += card.create()
+                        _articlesList.appendChild(card.create())
                     //}
                 })
             }
@@ -44,7 +44,7 @@ class NewsCardList{
                 for (let i = _startNumber; i<_articles.length && i<_startNumber+NEWS_PER_PAGE ; ++i){
 
                     const card = new NewsCard({..._articles[i],number:i});
-                    _articlesList.innerHTML += card.create()
+                    _articlesList.appendChild( card.create())
                 }
             }
 

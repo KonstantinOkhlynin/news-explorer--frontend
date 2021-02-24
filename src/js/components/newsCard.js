@@ -12,10 +12,9 @@ class NewsCard{
         const dispDate = FormDispDate(publishedAt);
         let flag = 'articles__flag';
         flag += id ? ' articles__flag-trash' :''
-        console.dir(flag);
-
+        const cardWrapper = document.createElement('div');
+        cardWrapper.classList.add('articles__item')
         const card = `
-        <div class="articles__item">
             <div  data-id=${number} class='${flag}'></div>
             <img src=${urlToImage} alt="${flag}" class="articles__article-image">
             <div class="articles__article-information">
@@ -26,9 +25,9 @@ class NewsCard{
                     <a class="articles__article-source" href=${url} target="_blank">${source.name}</a>
                 </p>
             </div>
-        </div>
         `;
-        return card
+        cardWrapper.innerHTML = card;
+        return cardWrapper
     }
 
 }
