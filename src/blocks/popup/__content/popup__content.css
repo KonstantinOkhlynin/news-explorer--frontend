@@ -8,6 +8,10 @@
   padding: 16px 17px;
 }
 
+.popup__content_hide{
+  display: none;
+}
+
 @media screen and (min-width: 534px) {
   .popup__content {
     width: 430px;
