@@ -3,8 +3,8 @@
 # NewsExplorer
 ### Diploma project of the web development course on the online learning portal Practicum by Yandex. A website for finding the latest news on the Internet with the ability to register and save interesting news in your profile (!!! At the moment, this feature is not available, as it requires financial costs to pay for hosting). To save the cards, I wrote a separate backend for this project, you can read it at the link [NewsExplorer-Backend](https://github.com/KonstantinOkhlynin/NewsExplorer-Backend).
 ## Goal
-### The goal of this project is to consolidate in practice all the knowledge gained during the course and get a [Certificate] (https://github.com/KonstantinOkhlynin/Certificate-Practicum-by-Yandex) about the course completion. In this project, it was a test of such skills as:
-# # # # 1. Layout (HTML5 and CSS3), including responsive, the site is adapted to several screen resolutions;
+### The goal of this project is to consolidate in practice all the knowledge gained during the course and get a [Certificate](https://github.com/KonstantinOkhlynin/Certificate-Practicum-by-Yandex) about the course completion. In this project, it was a test of such skills as:
+#### 1. Layout (HTML5 and CSS3), including responsive, the site is adapted to several screen resolutions;
 #### 2. Programming in JavaScript, using the OOP paradigm;
 #### 3. Clean and tidy code;
 ## Languages
