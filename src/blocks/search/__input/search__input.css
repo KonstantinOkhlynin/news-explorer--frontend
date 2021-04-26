@@ -7,6 +7,7 @@
     height: 64px;
     padding-left: 1.5rem;
     box-sizing: border-box;
+    outline: none;
 }
 
 @media screen and (max-width: 768px){

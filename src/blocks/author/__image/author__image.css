@@ -3,7 +3,8 @@ width: 464px;
 height: 464px;
 background-repeat:no-repeat;
 background-size: cover;
-background-image: url('../../../images/image-03.png');
+background-image: url('../../../images/kostya.jpg');
+border-radius: 50%;
 }
 
 @media screen and (max-width: 1024px) {
