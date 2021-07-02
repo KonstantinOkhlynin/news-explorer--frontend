@@ -1,6 +1,6 @@
 # Author: Konstantin Okhlynin
-# [**English Readme**](https://github.com/KonstantinOkhlynin/NewsExplorer-Frontend/blob/master/README.EN.md)
-# [**Сайт**](https://konstantinokhlynin.github.io/NewsExplorer-Frontend/)
+# [**English Readme**](https://github.com/KonstantinOkhlynin/news-explorer--frontend/blob/master/README.EN.md)
+# [**Сайт**](https://konstantinokhlynin.github.io/news-explorer--frontend/)
 # NewsExplorer
 ### Дипломный проект курса веб-разработки на портале онлайн обучения Яндекс.Практикум. Сайт для поиска свежих новостей в интернете с возможностью регистрации и сохранения интересных новостей у себя в профиле. Для сохранения карточек мной был написан отдельный бекенд для этого проекта, вы можете с ним ознакомиться по ссылке [NewsExplorer-Backend](https://github.com/KonstantinOkhlynin/NewsExplorer-Backend). 
 ## Языки
