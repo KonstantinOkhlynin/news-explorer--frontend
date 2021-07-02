@@ -1,7 +1,7 @@
 # Author: Konstantin Okhlynin
 # [**Website**](https://konstantinokhlynin.github.io/NewsExplorer-Frontend/)
 # NewsExplorer
-### Diploma project of the web development course on the online learning portal Practicum by Yandex. A website for finding the latest news on the Internet with the ability to register and save interesting news in your profile (!!! At the moment, this feature is not available, as it requires financial costs to pay for hosting). To save the cards, I wrote a separate backend for this project, you can read it at the link [NewsExplorer-Backend](https://github.com/KonstantinOkhlynin/NewsExplorer-Backend).
+### Diploma project of the web development course on the online learning portal Practicum by Yandex. A website for finding the latest news on the Internet with the ability to register and save interesting news in your profile. To save the cards, I wrote a separate backend for this project, you can read it at the link [NewsExplorer-Backend](https://github.com/KonstantinOkhlynin/NewsExplorer-Backend).
 ## Languages
 ### ‣ JavaScript(ES6);
 ### ‣ HTML5;
