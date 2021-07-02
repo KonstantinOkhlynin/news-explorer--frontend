@@ -10,7 +10,8 @@ class Header{
     render(props){
         const {isLoggedIn, userName} = props;
         const header = document.querySelector('.header');
-        const logoutIcons = header.querySelectorAll('.header__logout-icon');
+        const logoutIcons = document.querySelectorAll('.header__logout-icon');
+        // const logoutIconMobile = document.querySelector('.mobile-menu').querySelector('.header__logout-icon-mobile');
 
         const menu = document.querySelector('.mobile-menu');
         const navIcon = document.querySelector('.header__nav-icon');
@@ -36,19 +37,30 @@ class Header{
                 item.addEventListener('click',()=>{logout(this)});
             });
 
+            // logoutIconMobile.addEventListener('click',()=>{logout(this)});
+
                 document.querySelectorAll('.header__auth').forEach((item)=>{
                     item.removeEventListener('click',this._openPopup);
                 })
              document.querySelector('.header__item_main:nth-child(2)').style.display = 'block'
+             document.querySelector('.mobile-menu__item-saved').style.display = 'block'
         }
         else{
             header.querySelectorAll('.header__auth-name').forEach((item)=>{
                 item.innerHTML = 'Авторизоваться';
             })
+
+            document.querySelectorAll('.header__auth-name-mobile').forEach((item)=>{
+                item.innerHTML = 'Авторизоваться';
+            })
+
             logoutIcons.forEach((item)=>{
                 item.style.display = "none"
             });
+
+            // logoutIconMobile.style.display = "none"
              document.querySelector('.header__item_main:nth-child(2)').style.display = 'none'
+             document.querySelector('.mobile-menu__item-saved').style.display = 'none'
 
 
 

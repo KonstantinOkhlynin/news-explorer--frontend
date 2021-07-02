@@ -1,6 +1,6 @@
 class MainApi{
     constructor(){
-        this._baseURL = "https://news-explorer.students.nomoreparties.xyz";
+        this._baseURL = "https://api.news-explorer.nomoredomains.club";
     }
 
     async _postData(url, data){
